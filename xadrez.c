@@ -24,5 +24,30 @@ int main() {
         contadorRainha++;
     } while (contadorRainha < 8);
 
+    // Movimento do Cavalo: "L" → duas casas para baixo, uma casa para a esquerda
+    // Usaremos um loop 'for' para as jogadas do cavalo (por exemplo, simular 3 movimentos em "L")
+    // Dentro dele, usamos um loop 'while' para cada etapa do movimento
+
+    const int movimentosCavalo = 2; // Quantas vezes o Cavalo faz o movimento completo de "L"
+    const int casasBaixo = 2;
+    const int casasEsquerda = 1;
+
+    printf("\nMovimento do Cavalo:\n");
+    for (int jogada = 0; jogada < movimentosCavalo; jogada++) {
+        // Move duas casas para baixo
+        int passoBaixo = 0;
+        while (passoBaixo < casasBaixo) {
+            printf("Baixo\n");
+            passoBaixo++;
+        }
+
+        // Move uma casa para a esquerda
+        int passoEsquerda = 0;
+        while (passoEsquerda < casasEsquerda) {
+            printf("Esquerda\n");
+            passoEsquerda++;
+        }
+    }
+
     return 0;
 }
